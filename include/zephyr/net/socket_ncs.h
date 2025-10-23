@@ -85,6 +85,11 @@ extern "C" {
  */
 #define SO_RAI (NET_SOCKET_NCS_BASE + 61)
 
+/** sockopt: set a callback to be called when a send operation is completed by lower layers,
+ *  or until the timeout, given by the SO_SNDTIMEO socket option, is reached.
+ */
+#define SO_SENDCB (NET_SOCKET_NCS_BASE + 63)
+
 /** Release assistance indication (RAI).
  *  Indicate that the application does not intend to send more data.
  *  This applies immediately and lets the modem exit connected mode more
